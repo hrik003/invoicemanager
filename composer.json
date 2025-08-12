@@ -1,0 +1,29 @@
+{
+  "name": "arnlinvoices/invoicemanager",
+  "description": "A reusable Laravel Invoice Manager module",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+      "php": "^8.1",
+      "barryvdh/laravel-dompdf": "^3.0",
+      "simplesoftwareio/simple-qrcode": "^4.2",
+      "maatwebsite/excel": "^3.1"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArnlInvoices\\InvoiceManager\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ArnlInvoices\\InvoiceManager\\InvoiceManagerServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
