@@ -1,8 +1,26 @@
 {
   "name": "arnlinvoices/invoicemanager",
   "description": "A reusable Laravel Invoice Manager module",
+  "homepage": "https://github.com/hrik003/invoicemanager",
   "type": "library",
   "license": "MIT",
+  "keywords": [
+    "laravel",
+    "lumen",
+    "package",
+    "development",
+    "starter",
+    "invoicemanager",
+    "management",
+    "invoice"
+  ],
+  "authors": [
+    {
+      "name": "Arijit Samaddar",
+      "email": "samaddar_arijit@rediffmail.com",
+      "role": "Developer"
+    }
+  ],
   "require": {
       "php": "^8.1",
       "barryvdh/laravel-dompdf": "^3.0",
