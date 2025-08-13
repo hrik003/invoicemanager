@@ -35,6 +35,9 @@
       "ArnlInvoices\\InvoiceManager\\": "src/"
     }
   },
+  "config": {
+    "sort-packages": true
+  },
   "extra": {
     "laravel": {
       "providers": [
@@ -42,6 +45,6 @@
       ]
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
