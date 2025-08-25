@@ -17,7 +17,7 @@ class InvoiceManagerServiceProvider extends ServiceProvider
         // Publish config, views, etc.
         $this->publishes([
             __DIR__.'/config/invoicemanager.php' => config_path('invoicemanager.php'),
-        ], 'invoicemanager-config');
+        ], 'arnlinvoicemanager-config');
         $this->app->singleton('invoice-service', function () {
             return new \ArnlInvoices\InvoiceManager\Services\InvoiceService();
         });
