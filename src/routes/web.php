@@ -14,7 +14,9 @@ Route::get('hello', [WelcomeController::class, 'index']);
 // Route::get('invoicemanager/invoice-view', [InvoiceController::class, 'index']);
 
 Route::middleware(['web','auth'])->group(function () {
-    Route::resource('invoices','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController')->except(['edit','update']); // add as needed
+    // Route::resource('invoices','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController')->except(['edit','update']); // add as needed
+     Route::get('invoices','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController@create'); // add as needed
+     Route::post('invoices','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController@store'); // add as needed
     Route::get('invoices/{invoice}/download','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController@downloadPdf');
     Route::post('invoices/{invoice}/email','ArnlInvoices\InvoiceManager\Http\Controllers\InvoiceController@emailInvoice');
 });
