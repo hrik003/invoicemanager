@@ -5,8 +5,8 @@ namespace ArnlInvoices\InvoiceManager\Http\Controllers;
 use Illuminate\Routing\Controller;
 use PDF; // from barryvdh/laravel-dompdf
 use Illuminate\Http\Request;
-use Models\Invoice;
-use Models\InvoiceItem;
+use ArnlInvoices\InvoiceManager\Models\Invoice;
+use ArnlInvoices\InvoiceManager\Models\InvoiceItem;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
